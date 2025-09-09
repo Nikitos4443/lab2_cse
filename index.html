@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Controls</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<h1>UI Controls Showcase</h1>
+
+<div class="section">
+    <h2>1. Radiobutton</h2>
+    <p>Radio buttons allow the user to select one option from a set.</p>
+    <div class="example">
+        <label><input type="radio" name="color"> Red</label>
+        <label><input type="radio" name="color"> Blue</label>
+        <label><input type="radio" name="color"> Green</label>
+    </div>
+</div>
+
+<div class="section">
+    <h2>2. Checkbox</h2>
+    <p>Checkboxes let the user select multiple options independently.</p>
+    <div class="example">
+        <label><input type="checkbox"> Pizza</label>
+        <label><input type="checkbox"> Burger</label>
+        <label><input type="checkbox"> Pasta</label>
+    </div>
+</div>
+
+<div class="section">
+    <h2>3. Text Input</h2>
+    <p>A field where the user can type text.</p>
+    <div class="example">
+        <input type="text" placeholder="Enter your name">
+    </div>
+</div>
+
+<div class="section">
+    <h2>4. Tabs</h2>
+    <p>Tabs organize content into separate views that can be switched between.</p>
+    <div class="example">
+        <div class="tabs">
+            <button onclick="showTab('tab1')" id="btn1" class="active">Tab 1</button>
+            <button onclick="showTab('tab2')" id="btn2">Tab 2</button>
+        </div>
+        <div id="tab1" class="tab-content">This is content of Tab 1</div>
+        <div id="tab2" class="tab-content" style="display:none;">This is content of Tab 2</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>5. Button</h2>
+    <p>A clickable element that triggers an action.</p>
+    <div class="example">
+        <button onclick="alert('Button clicked!')">Click me</button>
+    </div>
+</div>
+
+<div class="section">
+    <h2>6. Text Label</h2>
+    <p>Text label describes or identifies another UI element.</p>
+    <div class="example">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="example@mail.com">
+    </div>
+</div>
+
+<div class="section">
+    <h2>7. Link</h2>
+    <p>A hyperlink navigates the user to another page.</p>
+    <div class="example">
+        <a href="https://www.google.com" target="_blank">Go to Google</a>
+    </div>
+</div>
+
+<div class="section">
+    <h2>8. Tooltip</h2>
+    <p>A tooltip provides additional info when hovering over an element.</p>
+    <div class="example">
+        <div class="tooltip">Hover me
+            <span class="tooltip-text">Tooltip text here</span>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>9. Dropdown List</h2>
+    <p>A dropdown lets users choose one option from a list.</p>
+    <div class="example">
+        <select>
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Orange</option>
+        </select>
+    </div>
+</div>
+
+<div class="section">
+    <h2>10. Data Grid</h2>
+    <p>A data grid displays tabular information.</p>
+    <div class="example">
+        <table>
+            <tr><th>Name</th><th>Age</th><th>City</th></tr>
+            <tr><td>Alex</td><td>22</td><td>Kyiv</td></tr>
+            <tr><td>Maria</td><td>25</td><td>Lviv</td></tr>
+            <tr><td>John</td><td>28</td><td>Odessa</td></tr>
+        </table>
+    </div>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>
