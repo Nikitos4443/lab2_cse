@@ -19,11 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    document.querySelectorAll("a").forEach(link => {
-        link.addEventListener("focus", () => toggleImage(link, true));
-        link.addEventListener("blur", () => toggleImage(link, false));
-    });
-
     document.querySelectorAll("input[type='text']").forEach(input => {
         let output = document.createElement("div");
         output.classList.add("text-output");
